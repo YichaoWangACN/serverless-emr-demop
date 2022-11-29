@@ -20,7 +20,7 @@ if __name__ == "__main__":
     )
 
     # Read our data from the appropriate raw table
-    df = spark.read.json("s3://< Production S3 bucket name >/sample-data/aws-samples/emr-serverless/data.json")
+    df = spark.read.json("s3://ant309-prod-527365492944/sample-data/aws-samples/emr-serverless/data.json")
 
     # Step 1 - Get daily views and uniques per repo
     gh = GitHubViews()
